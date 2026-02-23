@@ -1,12 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background: #f1f5f8;
+        }
+    </style>
 </head>
+
 <body>
-    
+        <header class=" w-[80%] mx-auto sticky top-0 ">
+        <h1 class="text-4xl mb-3 font-bold  text-[#323b49]"> job aplication tracker</h3>
+            <div class="grid grid-cols-3 gap-2">
+                <div class=" bg-white p-4 rounded-sm ">
+                    <h3>Total</h3>
+                    <p id="total" class="font-bold text-[#323b49] text-xl ">0</p>
+                </div>
+                <div class=" bg-white  p-4 rounded-sm">
+                    <h3>Interview</h3>
+                    <p id="interviewCount" class=" font-bold text-[#10b981]  text-xl">0</p>
+                </div>
+                <div class="bg-white p-4 rounded-sm">
+                    <h3>Rejected</h3>
+                    <p id="rejectedCount" class="font-bold text-[#ef4444]  text-xl">0</p>
+                </div>
+            </div>
+            <hr class=" my-3 border-[#c6d3e7]">
+    </header>
+
+    <main class="w-[80%] mx-auto">
+        <div class="mb-6">
+            <div class="flex items-center justify-between">
+                <h3 class="text-2xl mb-3 font-bold  text-[#323b49]">Available Jobs</h3>
+                <p> <span>8</span> jobs </p>
+            </div>
+            <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn"
+                class="px-5 py-2 bg-[#3b82f6] text-white">All</button>
+
+            <button onclick="toggleStyle('interView-filter-btn')" id="interView-filter-btn"
+                class=" px-5 py-2  border-0 bg-white">Interview</button>
+
+            <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn"
+                class="px-5 py-2 border-0 bg-white">Rejected</button>
+        </div>
+
+        <!-- filter section -->
+
+        <search id="filter-section" class="hidden">
+
+        </search>
+
+        <!-- card section -->
+        <section id="allCards" class="space-y-6">
+            <!-- card 1 -->
+            <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
+                <!-- part1 -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="title text-xl font-bold text-[#323b49]">Mobile First Corp</h3>
+                        <p class="skil my-1"> React Native Developer</p>
+                        <p class="salery my-4">Remote • Full-time • $130,000 - $175,000</p>
+                    </div>
+                    <p class="btn">Not Applied</p>
+                    <p class="condtion ">Build cross-platform mobile applications using React Native.Work on products
+                        used by millions of users worldwide.</p>
+                    <!-- btn -->
+                    <div>
+                        <button id=""
+                            class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
+
+                        <button id=""
+                            class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
+                    </div>
+
+                </div>
+                <!-- part2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
+                <!-- part1 -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="title text-xl font-bold text-[#323b49]">Web Designer & Developer</h3>
+                        <p class="skil my-1"> React Native Developer</p>
+                        <p class="salery my-4">Remote • Full-time • $130,000 - $175,000</p>
+                    </div>
+                    <p class="btn">Not Applied</p>
+                    <p class="condtion ">Build cross-platform mobile applications using React Native.Work on products
+                        used by millions of users worldwide.</p>
+                    <!-- btn -->
+                    <div>
+                        <button id=""
+                            class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
+
+                        <button id=""
+                            class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
+                    </div>
+
+                </div>
+                <!-- part2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
+                <!-- part1 -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="title text-xl font-bold text-[#323b49]">Data Visualization Specialist</h3>
+                        <p class="skil my-1"> React Native Developer</p>
+                        <p class="salery my-4">Remote • Full-time • $130,000 - $175,000</p>
+                    </div>
+                    <p class="btn">Not Applied</p>
+                    <p class="condtion ">Build cross-platform mobile applications using React Native.Work on products
+                        used by millions of users worldwide.</p>
+                    <!-- btn -->
+                    <div>
+                        <button id=""
+                            class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
+
+                        <button id=""
+                            class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
+                    </div>
+
+                </div>
+                <!-- part2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+               <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
+                <!-- part1 -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="title text-xl font-bold text-[#323b49]">Innovation Labs</h3>
+                        <p class="skil my-1"> React Native Developer</p>
+                        <p class="salery my-4">Remote • Full-time • $130,000 - $175,000</p>
+                    </div>
+                    <p class="btn">Not Applied</p>
+                    <p class="condtion ">Build cross-platform mobile applications using React Native.Work on products
+                        used by millions of users worldwide.</p>
+                    <!-- btn -->
+                    <div>
+                        <button id="" class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
+
+                        <button id="" class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
+                    </div>
+
+                </div>
+                <!-- part2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
