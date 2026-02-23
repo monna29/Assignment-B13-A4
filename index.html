@@ -20,7 +20,7 @@
 </head>
 
 <body>
-        <header class=" w-[80%] mx-auto sticky top-0 ">
+    <header class=" w-[80%] mx-auto sticky top-0 ">
         <h1 class="text-4xl mb-3 font-bold  text-[#323b49]"> job aplication tracker</h3>
             <div class="grid grid-cols-3 gap-2">
                 <div class=" bg-white p-4 rounded-sm ">
@@ -148,7 +148,7 @@
             </div>
 
             <!-- card 4 -->
-               <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
+            <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
                 <!-- part1 -->
                 <div class="space-y-4">
                     <div>
@@ -161,9 +161,11 @@
                         used by millions of users worldwide.</p>
                     <!-- btn -->
                     <div>
-                        <button id="" class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
+                        <button id=""
+                            class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
 
-                        <button id="" class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
+                        <button id=""
+                            class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
                     </div>
 
                 </div>
@@ -173,7 +175,18 @@
                 </div>
             </div>
         </section>
+        <!-- Empty Message -->
+        <div id="emptyMessage" class=" border border-gray-300 bg-base-400  shadow-sm rounded-2xl h-[300px] flex items-center justify-center">
+            <div class="flex flex-col items-center justify-center">
+                <img class="w-[60px]" src="logo/jobs.png" alt="">
+                <h3 class="text-lg font-semibold mt-2">No jobs Available</h3>
+                <p class="text-gray-500">Please choose jobs from All tab.</p>
+            </div>
+
+        </div>
     </main>
+    <!-- javascript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
