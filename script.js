@@ -147,9 +147,9 @@ function renderInterview() {
                 </div>
                 <p class="btn text-green-500">${item.btn}</p>
                 <p class="condtion">${item.condtion}</p>
-                <div class="flex gap-2 mt-2">
-                    <button class="interview px-5 py-2 border border-green-500 text-green-500 rounded">INTERVIEW</button>
-                    <button class="rejected px-5 py-2 border border-red-500 text-red-500 rounded">REJECTED</button>
+                <div class="flex justify-between sm:flex-none sm:justify-start ">
+                    <button class="interview p-1  sm:px-5 sm:py-2 border border-green-500 text-green-500 rounded">INTERVIEW</button>
+                    <button class="rejected p-1  sm:px-5 sm:py-2 border border-red-500 text-red-500 rounded">REJECTED</button>
                 </div>
             </div>
             <div>
@@ -176,9 +176,9 @@ function renderRejected() {
                 </div>
                 <p class="btn text-red-500">${item.btn}</p>
                 <p class="condtion">${item.condtion}</p>
-                <div class="flex gap-2 mt-2">
-                    <button class="interview px-5 py-2 border border-green-500 text-green-500 rounded">INTERVIEW</button>
-                    <button class="rejected px-5 py-2 border border-red-500 text-red-500 rounded">REJECTED</button>
+                <div class="flex justify-between sm:flex-none sm:justify-start ">
+                    <button class="interview p-1  sm:px-5 sm:py-2 border border-green-500 text-green-500 rounded">INTERVIEW</button>
+                    <button class="rejected p-1  sm:px-5 sm:py-2 border border-red-500 text-red-500 rounded">REJECTED</button>
                 </div>
             </div>
             <div>
