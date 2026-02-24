@@ -7,7 +7,6 @@
     <title>Document</title>
     <!-- tailwind + daisyui-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -45,7 +44,7 @@
         <div class="mb-6">
             <div class="flex items-center justify-between">
                 <h3 class="text-2xl mb-3 font-bold  text-[#323b49]">Available Jobs</h3>
-                <p> <span>8</span> jobs </p>
+                <p> <span id="total-jobs">8</span> jobs </p>
             </div>
             <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn"
                 class="px-5 py-2 bg-[#3b82f6] text-white">All</button>
@@ -74,7 +73,7 @@
                         <p class="skil my-1"> React Native Developer</p>
                         <p class="salery my-4">Remote • Full-time • $130,000 - $175,000</p>
                     </div>
-                    <p class="btn">Not Applied</p>
+                    <p class="btn ">Not Applied</p>
                     <p class="condtion ">Build cross-platform mobile applications using React Native.Work on products
                         used by millions of users worldwide.</p>
                     <!-- btn -->
@@ -89,7 +88,7 @@
                 </div>
                 <!-- part2 -->
                 <div>
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-regular fa-trash-can trash-btn"></i>
                 </div>
             </div>
 
@@ -117,7 +116,7 @@
                 </div>
                 <!-- part2 -->
                 <div>
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-regular fa-trash-can trash-btn"></i>
                 </div>
             </div>
 
@@ -145,7 +144,7 @@
                 </div>
                 <!-- part2 -->
                 <div>
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class=" fa-regular fa-trash-can trash-btn"></i>
                 </div>
             </div>
 
@@ -173,18 +172,127 @@
                 </div>
                 <!-- part2 -->
                 <div>
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-regular fa-trash-can trash-btn"></i>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
+                <!-- part1 -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="title text-xl font-bold text-[#323b49]">TechCorp Industries</h3>
+                        <p class="skil my-1"> MegaCorp Solutions</p>
+                        <p class="salery my-4">Remote • Full-time • $130,000 - $175,000</p>
+                    </div>
+                    <p class="btn">Not Applied</p>
+                    <p class="condtion ">Build cross-platform mobile applications using React Native.Work on products
+                        used by millions of users worldwide.</p>
+                    <!-- btn -->
+                    <div>
+                        <button id=""
+                            class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
+
+                        <button id=""
+                            class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
+                    </div>
+
+                </div>
+                <!-- part2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can trash-btn"></i>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
+                <!-- part1 -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="title text-xl font-bold text-[#323b49]">StartupXYZ</h3>
+                        <p class="skil my-1"> MegaCorp Solutions</p>
+                        <p class="salery my-4">Remote • Full-time • $130,000 - $175,000</p>
+                    </div>
+                    <p class="btn">Not Applied</p>
+                    <p class="condtion ">Build cross-platform mobile applications using React Native.Work on products
+                        used by millions of users worldwide.</p>
+                    <!-- btn -->
+                    <div>
+                        <button id=""
+                            class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
+
+                        <button id=""
+                            class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
+                    </div>
+
+                </div>
+                <!-- part2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can trash-btn"></i>
+                </div>
+            </div><!-- card 7 -->
+            <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
+                <!-- part1 -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="title text-xl font-bold text-[#323b49]"> MegaCorp Solutions</h3>
+                        <p class="skil my-1"> MegaCorp Solutions</p>
+                        <p class="salery my-4">Remote • Full-time • $130,000 - $175,000</p>
+                    </div>
+                    <p class="btn">Not Applied</p>
+                    <p class="condtion ">Build cross-platform mobile applications using React Native.Work on products
+                        used by millions of users worldwide.</p>
+                    <!-- btn -->
+                    <div>
+                        <button id=""
+                            class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
+
+                        <button id=""
+                            class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
+                    </div>
+
+                </div>
+                <!-- part2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can trash-btn"></i>
+                </div>
+            </div><!-- card 8 -->
+            <div class="card  flex justify-between border border-gray-300 bg-base-400  shadow-sm rounded-2xl p-6">
+                <!-- part1 -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="title text-xl font-bold text-[#323b49]">Innovation</h3>
+                        <p class="skil my-1"> MegaCorp Solutions</p>
+                        <p class="salery my-4">Remote • Full-time • $130,000 - $175,000</p>
+                    </div>
+                    <p class="btn">Not Applied</p>
+                    <p class="condtion ">Build cross-platform mobile applications using React Native.Work on products
+                        used by millions of users worldwide.</p>
+                    <!-- btn -->
+                    <div>
+                        <button id=""
+                            class="interview px-5 py-2 border  border-[#10b981] text-[#10b981]">INTERVIEW</button>
+
+                        <button id=""
+                            class="rejected px-5 py-2 border border-[#ef4444] text-[#ef4444]">REJECTED</button>
+                    </div>
+
+                </div>
+                <!-- part2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can trash-btn"></i>
                 </div>
             </div>
         </section>
-<!-- Empty Message -->
-        <div id="emptyMessage" class=" border border-gray-300 bg-base-400  shadow-sm rounded-2xl h-[300px] flex items-center justify-center">
-            <div class="flex flex-col items-center justify-center">
-                <img class="w-[60px]" src="icon/jobs.png" alt="">
-                <h3 class="text-lg font-semibold mt-2">No jobs Available</h3>
-                <p class="text-gray-500">Please choose jobs from All tab.</p>
-            </div>
+        <!-- Empty Message -->
+        <div id="empty-message" class="hidden">
+            <div
+                class=" border border-gray-300 bg-base-400  shadow-sm rounded-2xl h-[300px] flex items-center justify-center">
+                <div class="flex flex-col items-center justify-center">
+                    <img class="w-[60px]" src="icon/jobs.png" alt="">
+                    <h3 class="text-lg font-semibold mt-2">No jobs Available</h3>
+                    <p class="text-gray-500">Please choose jobs from All tab.</p>
+                </div>
 
+            </div>
         </div>
     </main>
     <!-- javascript -->
